@@ -11,7 +11,7 @@ machine learning, and a Power BI dashboard.
 
 | Chapter | Status | Link |
 | --- | --- | --- |
-| 01 · Exploratory Data Analysis | ✅ Done | [notebooks/01_EDA.ipynb](notebooks/01_EDA.ipynb) · [HTML report](reports/01_EDA_report.html) |
+| 01 · Exploratory Data Analysis | ✅ Done | [notebooks/01_EDA.ipynb](notebooks/01_EDA.ipynb) |
 | 02 · SQL Analysis | 🚧 In progress | [sql/](sql/) |
 | 03 · ML Model (predict negative reviews) | ⏳ Planned | — |
 | Power BI Dashboard | ✅ Done | [Jump to section](#power-bi-dashboard) · [powerbi/olist_dashboard.pbix](powerbi/olist_dashboard.pbix) |

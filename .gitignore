@@ -21,3 +21,7 @@ Thumbs.db
 # Temp
 _dump.txt
 *.tmp
+
+# Website-only assets (not part of the GitHub repo)
+reports/01_EDA_full.html
+reports/01_EDA_report.html

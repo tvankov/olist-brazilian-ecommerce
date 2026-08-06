@@ -7,11 +7,13 @@ machine learning, and a Power BI dashboard.
 > **Data source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 > **License:** CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike)
 
+**🔗 Live project page:** [todorvankov.com/olist-brazilian-e-commerce](https://todorvankov.com/olist-brazilian-e-commerce)
+
 ## Chapters
 
 | Chapter | Status | Link |
 | --- | --- | --- |
-| 01 · Exploratory Data Analysis | ✅ Done | [notebooks/01_EDA.ipynb](notebooks/01_EDA.ipynb) |
+| 01 · Exploratory Data Analysis | ✅ Done | [notebooks/01_EDA.ipynb](notebooks/01_EDA.ipynb) · [Live report](https://todorvankov.com/olist-brazilian-e-commerce) |
 | 02 · SQL Analysis | 🚧 In progress | [sql/](sql/) |
 | 03 · ML Model (predict negative reviews) | ⏳ Planned | — |
 | Power BI Dashboard | ✅ Done | [Jump to section](#power-bi-dashboard) · [powerbi/olist_dashboard.pbix](powerbi/olist_dashboard.pbix) |

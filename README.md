@@ -7,6 +7,15 @@ machine learning, and a Power BI dashboard.
 > **Data source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 > **License:** CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike)
 
+## Chapters
+
+| Chapter | Status | Link |
+| --- | --- | --- |
+| 01 · Exploratory Data Analysis | ✅ Done | [notebooks/01_EDA.ipynb](notebooks/01_EDA.ipynb) · [HTML report](reports/01_EDA_report.html) |
+| 02 · SQL Analysis | 🚧 In progress | [sql/](sql/) |
+| 03 · ML Model (predict negative reviews) | ⏳ Planned | — |
+| Power BI Dashboard | ✅ Done | [Jump to section](#power-bi-dashboard) · [powerbi/olist_dashboard.pbix](powerbi/olist_dashboard.pbix) |
+
 ---
 
 ## Project Goal
@@ -24,6 +33,43 @@ satisfaction, and build a machine learning model to **predict negative reviews (
 
 ---
 
+## Power BI Dashboard
+
+A 4-page interactive dashboard built in Power BI, digging into the same data from four angles:
+sales performance, customer satisfaction, and delivery logistics — tying back to the EDA finding
+that delivery time drives reviews.
+
+> Live web version isn't available (personal Power BI account can't enable public "Publish to Web").
+> Download **[olist_dashboard.pbix](powerbi/olist_dashboard.pbix)** and open it in Power BI Desktop
+> to explore it interactively — filters, drilldowns and the reset button all work.
+
+### Overview
+Revenue, order count, review score and delivery time at a glance, a revenue trend line, an
+order-density map of Brazil, and the first look at the delivery-time-vs-review-score relationship.
+
+![Overview page](powerbi/overview.png)
+
+### Sales
+Revenue broken down by product category and by month (seasonal pattern, peaking in May), plus
+the split of payment methods (credit card dominates at ~78%).
+
+![Sales page](powerbi/sales.png)
+
+### Customer
+Review score distribution (skewed toward 5★, but 1★ still outnumbers 2★), and how review score
+relates to both delivery time and freight cost — both get worse for low-rated orders.
+
+![Customer page](powerbi/customers.png)
+
+### Logistics
+92% of orders arrive on time. Freight cost by category (bulky items like computers and furniture
+cost the most to ship), and average delivery time by state — the slowest states are all in the
+Amazon region (RR, AP, AM), consistent with the geographic concentration found in the EDA.
+
+![Logistics page](powerbi/logistics.png)
+
+---
+
 ## Project Structure
 
 ```
@@ -34,7 +80,7 @@ Olist-Brazilian-E-Commerce/
 ├── notebooks/
 │   └── 01_EDA.ipynb    # Exploratory Data Analysis
 ├── sql/                # SQL queries
-├── powerbi/            # Power BI dashboard
+├── powerbi/            # Power BI dashboard (.pbix + screenshots)
 ├── reports/            # exported HTML reports
 ├── requirements.txt
 └── README.md
@@ -71,7 +117,7 @@ Python · pandas · NumPy · Matplotlib · Seaborn · Plotly · SQLAlchemy · SQ
 - [x] `01_EDA.ipynb` — data cleaning & exploratory analysis
 - [ ] `02_SQL_Analysis.ipynb` — business questions in SQL
 - [ ] `03_ML_Model.ipynb` — predicting negative reviews
-- [ ] Power BI dashboard
+- [x] Power BI dashboard
 
 ---
 

@@ -1,5 +1,17 @@
 # Olist Brazilian E-Commerce — Data Analytics Project
 
+## In short
+
+Analysis of ~100k real orders from a Brazilian marketplace: what drives customer satisfaction?
+
+- **Finding:** late deliveries drop the average rating from **4.29 to 2.57 stars**
+- **SQL:** 6 business questions answered with `JOIN`, `GROUP BY`, `CASE WHEN`
+- **Machine learning:** predicts bad reviews — ROC-AUC 0.61 at order time, **0.74** once delivery is known
+- **Power BI:** 4-page interactive dashboard (sales, customers, logistics)
+- **Skills shown:** Python · SQL · pandas · scikit-learn · Power BI
+
+---
+
 End-to-end data analytics project on the **Brazilian E-Commerce Public Dataset by Olist**,
 covering the full analyst workflow: data cleaning, exploratory analysis (EDA), SQL analysis,
 machine learning, and a Power BI dashboard.
